@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinea tu Realidad con la de Dios</title>
+    <style>
+        body {
+            background-color: #f4f1ea;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        /* Contenedor principal */
+        .libreta {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 8px solid #4a6fa5;
+            font-size: 16px; /* Tamaño base que el botón modificará */
+            position: relative;
+            transition: font-size 0.2s ease;
+        }
+
+        /* Botones de tamaño de texto */
+        .controles-texto {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .controles-texto button {
+            background-color: #eef2f5;
+            border: 1px solid #cdd8e4;
+            color: #4a6fa5;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 5px 12px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .controles-texto button:hover {
+            background-color: #dbe4ec;
+        }
+
+        /* Ocultar botones al imprimir */
+        @media print {
+            .controles-texto {
+                display: none;
+            }
+            body { background: white; }
+            .libreta { box-shadow: none; padding: 0; }
+        }
+
+        /* Estilos del contenido */
+        .buena-noticia {
+            background: #eef2f5;
+            padding: 15px 20px;
+            border-left: 4px solid #4a6fa5;
+            margin-bottom: 25px;
+            margin-top: 30px;
+            border-radius: 0 8px 8px 0;
+            color: #2c3e50;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 35px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: #4a6fa5;
+            margin-top: 30px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 8px;
+            font-size: 1.2em;
+        }
+        .versiculo {
+            background: #fdfbf7;
+            border-left: 4px solid #d4af37;
+            padding: 12px 18px;
+            font-style: italic;
+            color: #555;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: "•";
+            color: #4a6fa5;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        .gracia {
+            background-color: #f0f7f4;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border-left: 4px solid #2ecc71;
+            margin-top: 15px;
+            color: #27ae60;
+        }
+        .gracia::before {
+            content: none;
+        }
+        .aplicacion {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #ffe082;
+            margin-top: 40px;
+            box-shadow: 0 2px 8px rgba(255, 193, 7, 0.1);
+        }
+        .aplicacion h2 {
+            margin-top: 0;
+            color: #f39c12;
+            border-bottom: 1px solid #ffe082;
+            padding-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="libreta" id="contenedorTexto">
+    
+    <div class="controles-texto">
+        <button onclick="cambiarTamano(-1)" title="Achicar texto">A-</button>
+        <button onclick="cambiarTamano(1)" title="Agrandar texto">A+</button>
+    </div>
+
+    <div class="buena-noticia">
+        <strong>Buena Noticia | Isaías 26:3</strong><br>
+        "Tú guardarás en completa paz a aquel cuyo pensamiento en ti persevera; porque en ti ha confiado."
+    </div>
+
+    <h1>Alinea tu Realidad con la de Dios</h1>
+
+    <div class="versiculo">
+        <strong>Romanos 12:2</strong><br>
+        No se amolden al mundo actual, sino sean transformados mediante la renovación de su mente. Así podrán comprobar cómo es la voluntad de Dios: buena, agradable y perfecta.
+    </div>
+
+    <h2>Introducción: El espejismo del entorno</h2>
+    <ul>
+        <li><span class="highlight">Mentira:</span> "Si mi situación cambia, tendré paz".</li>
+        <li><span class="highlight">Verdad:</span> El entorno no te da libertad, solo amplifica lo que ya crees.</li>
+    </ul>
+
+    <h3>I. El corazón es el manantial de tu realidad</h3>
+    <div class="versiculo">
+        "Sobre toda cosa guardada, guarda tu corazón; Porque de él mana la vida." (Proverbios 4:23)
+    </div>
+    <ul>
+        <li><span class="highlight">El concepto:</span> Tu vida toma la forma de lo que atesoras por dentro.</li>
+        <li><span class="highlight">El ejemplo:</span> Ansiedad por likes (jóvenes) o por dinero (adultos).</li>
+        <li class="gracia"><span class="highlight">La Gracia:</span> Cuando crees que tu valor no fluctúa con la economía o la popularidad; comienzas a vivir desde la mente renovada por la verdad.</li>
+    </ul>
+
+    <h3>II. Las pruebas revelan la manera de pensar</h3>
+    <div class="versiculo">
+        "Pero tenemos este tesoro en vasijas de barro para que se vea que tan sublime poder viene de Dios y no de nosotros. Nos vemos atribulados en todo, pero no abatidos; perplejos, pero no desesperados…" (2 Corintios 4:7-8)
+    </div>
+    <ul>
+        <li><span class="highlight">El concepto:</span> Las crisis no te hacen bueno ni malo; simplemente sacan a la luz lo que hay dentro.</li>
+        <li><span class="highlight">El ejemplo:</span> El tubo de pasta dental. Si la vida te aprieta, sale exactamente lo que llevas por dentro (ira, miedo, o paz, gozo, gratitud). Ejemplo de Pedro en el Getsemaní.</li>
+        <li class="gracia"><span class="highlight">La Gracia:</span> Si fallas bajo presión, Dios no te condena ni te retira su favor. Esa presión puede ser el Espíritu Santo llevándote al desierto para mostrarte dónde necesitas soltar el control y descansar en Él.</li>
+    </ul>
+
+    <h3>III. El obstáculo para disfrutar la gracia: Identidad desactualizada</h3>
+    <div class="versiculo">
+        "Con respecto a la vida que antes llevaban, se les enseñó que debían quitarse el ropaje de la vieja naturaleza, la cual está corrompida por los deseos engañosos; ser renovados en la actitud de su mente; y ponerse el ropaje de la nueva naturaleza, creada a imagen de Dios, en verdadera justicia y santidad." (Efesios 4:22-24)
+    </div>
+    <ul>
+        <li><span class="highlight">El concepto:</span> Eres totalmente libre, pero tu mente puede seguir teniendo "memoria muscular" de esclavo.</li>
+        <li><span class="highlight">El ejemplo:</span> En el mundo de las computadoras y celulares hay un fenómeno curioso, que ocurre cuando se desactualiza la fecha.</li>
+        <li class="gracia"><span class="highlight">La Gracia:</span> Deja de pensar desde tu realidad pasada. Dice Pablo: quitarse, renovar y ponerse. Pregúntate: ¿qué debo quitarme, qué debo renovar, y qué poner?</li>
+    </ul>
+
+    <h3>IV. El vino de la Gracia rompe el viejo "Yo"</h3>
+    <div class="versiculo">
+        "Ni echan vino nuevo en odres viejos; de otra manera los odres se rompen, y el vino se derrama... pero echan el vino nuevo en odres nuevos, y lo uno y lo otro se conservan juntamente." (Mateo 9:17)
+    </div>
+    <ul>
+        <li><span class="highlight">El concepto:</span> La Gracia total (el vino nuevo) no cabe en una mente sin renovar (el odre viejo).</li>
+        <li><span class="highlight">El ejemplo:</span> Nuestro nuevo yo no puede ser gobernado por nuestro yo antiguo.</li>
+        <li class="gracia"><span class="highlight">La Gracia:</span> Te da el poder en Cristo para vivir desde la fortaleza de una mente renovada.</li>
+    </ul>
+
+    <div class="aplicacion">
+        <h2>Aplicación Práctica</h2>
+        <ul>
+            <li><span class="highlight">(El Odre Viejo):</span> ¿En qué área de mi vida estoy actuando como el "perrito rescatado", viviendo con miedo o intentando ganarme un favor de Dios que ya me fue dado?</li>
+            <li><span class="highlight">(El Vino Nuevo):</span> ¿Qué promesa de la obra de Cristo necesito recordar hoy para que esa área de mi vida por fin descanse en Su gracia?</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    let tamanoActual = 16; // Tamaño de letra inicial en pixeles
+
+    function cambiarTamano(cambio) {
+        tamanoActual += (cambio * 2); // Aumenta o disminuye de 2 en 2
+        
+        // Ponemos un límite mínimo para que no se vuelva ilegible
+        if(tamanoActual < 12) tamanoActual = 12;
+        // Ponemos un límite máximo por si acaso
+        if(tamanoActual > 30) tamanoActual = 30;
+
+        document.getElementById('contenedorTexto').style.fontSize = tamanoActual + 'px';
+    }
+</script>
+
+</body>
+</html>
